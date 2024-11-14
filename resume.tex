@@ -1,0 +1,45 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{geometry}
+\geometry{margin=0.5in}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[super]{nth}
+\usepackage[autostyle, english = american]{csquotes}
+
+\pagenumbering{gobble}
+
+% Define section formatting
+\titleformat{\section}{\bfseries\Large}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries\large}{}{0em}{}
+
+% Set space between sections and items
+\titlespacing*{\section}{0pt}{1em}{0.5em}
+\titlespacing*{\subsection}{0pt}{0.5em}{0.5em}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+% Header
+\renewcommand{\maketitle}{
+\begin{center}
+	\textbf{\Huge Nathan Dai} \\
+	\vspace{0.5em}
+	\href{mailto:nathan.dai@berkeley.edu}{nathan.dai@berkeley.edu} \ | \ \href{tel:7607172199}{(760)-717-2199} \ | \ \href{https://linkedin.com/in/nathandai5287}{linkedin.com/in/nathandai5287}
+\end{center}
+}
+
+\begin{document}
+
+\maketitle
+
+\input{sections/education}
+\input{sections/skills}
+\input{sections/experiences}
+% \input{sections/projects}
+\input{sections/publications}
+\input{sections/other}
+
+% \input{sections/work}
+% \input{sections/extracurriculars}
+% \input{sections/awards}
+
+\end{document}
