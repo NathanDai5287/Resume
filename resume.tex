@@ -1,11 +1,13 @@
 \documentclass[letterpaper,10pt]{article}
 \usepackage{geometry}
-\geometry{margin=0.42in}
+\geometry{margin=0.39in}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage[super]{nth}
 \usepackage[autostyle, english = american]{csquotes}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
 
 \pagenumbering{gobble}
 
@@ -19,12 +21,19 @@
 \titlespacing*{\subsection}{0pt}{0.5em}{0.5em}
 \setlist[itemize]{noitemsep, topsep=0pt}
 
-% Header
 \renewcommand{\maketitle}{
 \begin{center}
 	\textbf{\huge Nathan Dai} \\
-	\vspace{0.4em}
-	\href{mailto:nathan.dai@berkeley.edu}{nathan.dai@berkeley.edu} \ | \ \href{tel:7607172199}{(760)-717-2199} \ | \ \href{https://linkedin.com/in/nathandai5287}{linkedin.com/in/nathandai5287} \ | \ \href{https://github.com/nathandai5287}{https://github.com/nathandai5287}
+	\vspace{1.1em}
+  \noindent\hspace*{1.5cm}%
+	\begin{tabularx}{\dimexpr\textwidth-1.5cm\relax}{@{}X@{\hspace{0.6em}}X>{\hspace{0.6em}}X@{}}
+    \faPhone\, \href{tel:7607172199}{(760)-717-2199} &
+    \faLinkedin\, \href{https://linkedin.com/in/nathandai5287}{linkedin.com/in/nathandai5287} &
+    \hspace{2em}\faHome\, Santa Clara, CA \\
+    \faEnvelope\, \href{mailto:nathan.dai@berkeley.edu}{nathan.dai@berkeley.edu} &
+    \faGithub\, \href{https://github.com/nathandai5287}{github.com/nathandai5287} &
+    \hspace{2em}\faGraduationCap\, Berkeley, CA
+  \end{tabularx}
 \end{center}
 }
 
